@@ -19,11 +19,51 @@
     work correctly both with client-side routing and a non-root public URL.
     Learn how to configure a non-root public URL by running `npm run build`.
   -->
-  <title>React App</title>
-  
+  <title>Spatial Data Display Test</title>
+  <style type="text/css">
+    .container div{
+          /* min-height: 200px; */
+          height: 100%;
+      }
+      .container .left{
+          float: left;
+          width: 20%;
+          background: white;
+      }
+      .container .right{
+          float: right;
+          width: 80%;
+          /* background: blue; */
+      }
+
+      .container .left .search{
+          height: 500px;
+          background: white;
+      }
+
+      .container .left .layers{
+          height: 500px;
+          background: white;
+      }
+
+  </style>
 </head>
 <body>
-  <div style="min-height: 500px; justify-content: center;position: relative" id="map"/>
+  <!-- <div style="min-height: 500px; justify-content: center;position: relative" id="map"/> -->
+  <body>
+
+    <div class="container">
+        <div class="left">
+          <h2>菜单区域</h2>
+          <div class="search"> 
+            <p>查询输入 </ p>
+          </div>
+          <div class="layers"> 
+            <p>图层列表</p> 
+          </div> 
+        </div>
+        <div class="right", id="map"></div>
+    </div>
   <!--
     This HTML file is a template.
     If you open it directly in the browser, you will see an empty page.

@@ -19,6 +19,7 @@ const scene = new Scene({
     pitch: 0,
     zoom: 12,
   }),
+  logoVisible: false,
 });
 
 scene.on("loaded", () => {
